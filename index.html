@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My App Practice from CS5610 Module 2</title>
+    <!-- We want to load boostrap first before our external CSS file -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Then, we load our custom external CSS main.css file when rendering our webpage (Order matters!) We want our rules to override the ones from Bootstrap, not the other way around-->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- The beginning of the container, it now has nice margins -->
+    <div class="container">
+      <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <h1>
+              <a class="navbar-brand" href="#">SF Airbnb Listings</a>
+            </h1>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">First 50 Listings</a>
+                </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="row">
+          <div class="col-lg-8 col-md-12">
+            <section class="listings row">
+              <h2>Listings</h2>
+
+              <div class="listing col-6">
+                <article class="card">
+                  <img
+                    src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
+                    alt="Thumbnail of the listing for the serviced apartment in San Francisco"
+                    class="card-img-top"
+                  />
+
+                  <div class="card-body">
+                    <h3>
+                      Serviced apartment in San Francisco · ★ 4.87 · 1 bedroom ·
+                      2 beds · 1 bath
+                    </h3>
+
+                    <div class="host">Holly</div>
+                    <div class="price">$187.00 per night</div>
+                    <div class="rating">⭐️4.87</div>
+                    <div
+                      class="description overflow-scroll"
+                      style="max-height: 180px"
+                    >
+                      Our bright garden unit overlooks a lovely backyard area
+                      with fruit trees and native plants. It is an oasis in a
+                      big city. The apartment comfortably fits a couple or small
+                      family. It is located on a cul de sac street that ends at
+                      lovely Duboce Park.<br /><br /><b>The space</b><br />Newly
+                      remodeled, modern, and bright garden unit in historic
+                      Victorian home. <br /><br />New fixtures and finishes.<br />Zero
+                      VOC and non-toxic paint.<br />Organic and fair-trade teas,
+                      fresh local ground coffee.<br />Local art on walls.<br />Sofa
+                      bed and Queen bed are in the same room. More of a petite
+                      apartment with a separate room for dining and kitchen.<br /><br /><b
+                        >Guest access</b
+                      ><br />Full access to patio and backyard (Shared)<br />Beautiful
+                      garden with fruit trees & native plants <br />Washer &
+                      dryer (Shared)<br />Children's toys<br />Charcoal grill<br /><br /><b
+                        >Other things to note</b
+                      ><br />Due to the fact that we have children and a dog, we
+                      are up early 7-8am and their footsteps or paws can be
+                      heard
+                    </div>
+                    <div class="actions">
+                      <button class="btn btn-primary">Rent</button>
+                    </div>
+                  </div>
+                  <!-- end of /card-body-->
+                </article>
+              </div>
+              <!-- ./listings -->
+
+              <div class="listing col-6">
+                <article class="card">
+                  <img
+                    src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
+                    alt="Thumbnail of the listing for the serviced apartment in San Francisco"
+                    class="card-img-top"
+                  />
+
+                  <div class="card-body">
+                    <h3>
+                      Serviced apartment in San Francisco · ★ 4.87 · 1 bedroom ·
+                      2 beds · 1 bath
+                    </h3>
+
+                    <div class="host">Holly</div>
+                    <div class="price">$187.00 per night</div>
+                    <div class="rating">⭐️4.87</div>
+                    <div
+                      class="description overflow-scroll"
+                      style="max-height: 180px"
+                    >
+                      Our bright garden unit overlooks a lovely backyard area
+                      with fruit trees and native plants. It is an oasis in a
+                      big city. The apartment comfortably fits a couple or small
+                      family. It is located on a cul de sac street that ends at
+                      lovely Duboce Park.<br /><br /><b>The space</b><br />Newly
+                      remodeled, modern, and bright garden unit in historic
+                      Victorian home. <br /><br />New fixtures and finishes.<br />Zero
+                      VOC and non-toxic paint.<br />Organic and fair-trade teas,
+                      fresh local ground coffee.<br />Local art on walls.<br />Sofa
+                      bed and Queen bed are in the same room. More of a petite
+                      apartment with a separate room for dining and kitchen.<br /><br /><b
+                        >Guest access</b
+                      ><br />Full access to patio and backyard (Shared)<br />Beautiful
+                      garden with fruit trees & native plants <br />Washer &
+                      dryer (Shared)<br />Children's toys<br />Charcoal grill<br /><br /><b
+                        >Other things to note</b
+                      ><br />Due to the fact that we have children and a dog, we
+                      are up early 7-8am and their footsteps or paws can be
+                      heard
+                    </div>
+                    <div class="actions">
+                      <button class="btn btn-primary">Rent</button>
+                    </div>
+                  </div>
+                  <!-- end of /card-body-->
+                </article>
+              </div>
+              <!-- ./listings -->
+
+              <div class="listing col-6">
+                <article class="card">
+                  <img
+                    src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
+                    alt="Thumbnail of the listing for the serviced apartment in San Francisco"
+                    class="card-img-top"
+                  />
+
+                  <div class="card-body">
+                    <h3>
+                      Serviced apartment in San Francisco · ★ 4.87 · 1 bedroom ·
+                      2 beds · 1 bath
+                    </h3>
+
+                    <div class="host">Holly</div>
+                    <div class="price">$187.00 per night</div>
+                    <div class="rating">⭐️4.87</div>
+                    <div
+                      class="description overflow-scroll"
+                      style="max-height: 180px"
+                    >
+                      Our bright garden unit overlooks a lovely backyard area
+                      with fruit trees and native plants. It is an oasis in a
+                      big city. The apartment comfortably fits a couple or small
+                      family. It is located on a cul de sac street that ends at
+                      lovely Duboce Park.<br /><br /><b>The space</b><br />Newly
+                      remodeled, modern, and bright garden unit in historic
+                      Victorian home. <br /><br />New fixtures and finishes.<br />Zero
+                      VOC and non-toxic paint.<br />Organic and fair-trade teas,
+                      fresh local ground coffee.<br />Local art on walls.<br />Sofa
+                      bed and Queen bed are in the same room. More of a petite
+                      apartment with a separate room for dining and kitchen.<br /><br /><b
+                        >Guest access</b
+                      ><br />Full access to patio and backyard (Shared)<br />Beautiful
+                      garden with fruit trees & native plants <br />Washer &
+                      dryer (Shared)<br />Children's toys<br />Charcoal grill<br /><br /><b
+                        >Other things to note</b
+                      ><br />Due to the fact that we have children and a dog, we
+                      are up early 7-8am and their footsteps or paws can be
+                      heard
+                    </div>
+                    <div class="actions">
+                      <button class="btn btn-primary">Rent</button>
+                    </div>
+                  </div>
+                  <!-- end of /card-body-->
+                </article>
+              </div>
+              <!-- ./listings -->
+
+              <div class="listing col-6">
+                <article class="card">
+                  <img
+                    src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
+                    alt="Thumbnail of the listing for the serviced apartment in San Francisco"
+                    class="card-img-top"
+                  />
+
+                  <div class="card-body">
+                    <h3>
+                      Serviced apartment in San Francisco · ★ 4.87 · 1 bedroom ·
+                      2 beds · 1 bath
+                    </h3>
+
+                    <div class="host">Holly</div>
+                    <div class="price">$187.00 per night</div>
+                    <div class="rating">⭐️4.87</div>
+                    <div
+                      class="description overflow-scroll"
+                      style="max-height: 180px"
+                    >
+                      Our bright garden unit overlooks a lovely backyard area
+                      with fruit trees and native plants. It is an oasis in a
+                      big city. The apartment comfortably fits a couple or small
+                      family. It is located on a cul de sac street that ends at
+                      lovely Duboce Park.<br /><br /><b>The space</b><br />Newly
+                      remodeled, modern, and bright garden unit in historic
+                      Victorian home. <br /><br />New fixtures and finishes.<br />Zero
+                      VOC and non-toxic paint.<br />Organic and fair-trade teas,
+                      fresh local ground coffee.<br />Local art on walls.<br />Sofa
+                      bed and Queen bed are in the same room. More of a petite
+                      apartment with a separate room for dining and kitchen.<br /><br /><b
+                        >Guest access</b
+                      ><br />Full access to patio and backyard (Shared)<br />Beautiful
+                      garden with fruit trees & native plants <br />Washer &
+                      dryer (Shared)<br />Children's toys<br />Charcoal grill<br /><br /><b
+                        >Other things to note</b
+                      ><br />Due to the fact that we have children and a dog, we
+                      are up early 7-8am and their footsteps or paws can be
+                      heard
+                    </div>
+                    <div class="actions">
+                      <button class="btn btn-primary">Rent</button>
+                    </div>
+                  </div>
+                  <!-- end of /card-body-->
+                </article>
+              </div>
+              <!-- ./listings -->
+            </section>
+            <section class="listings"></section>
+            <!-- /.listings -->
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <h2>Create Listing</h2>
+            <!-- Form Data-->
+            <form id="form-create-listing"> 
+              <div class="mb-3">
+                <label class="form-label">
+                  <div>Title</div>
+                  <input id="input-title" type="text" class="form-control" name="title" />
+                </label>
+              </div>
+                <div class="mb-3">
+              <div class="mb-3">
+                <label class="form-label">
+                  <div>Price</div>
+                  <input 
+                    id="input-price"
+                    type="number"
+                    class="form-control"
+                    name="price"
+                    value="120"
+                  />
+                </label>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">
+                  <div>Description</div>
+                  <input 
+                    id="input-description" 
+                    type="text" 
+                    class="form-control" 
+                    name="description" />
+                </label>
+              </div>
+              <!-- End of form data-->
+
+              <div class="mb-3">
+                <button class="btn btn-primary" type="submit">Create</button>
+                <button id="button-cancel" class="btn btn-secondary">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div>Made by John Doe with ❤️</div>
+        <!-- <div>&copy; 2026. All rights reserved.</div> -->
+      </footer>
+    </div>
+    <!-- /container-->
+
+    <script src="./js/main.js">
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

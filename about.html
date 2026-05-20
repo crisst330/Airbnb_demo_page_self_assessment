@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The First 50 Listings</title>
+    <!-- We want to load boostrap first before our external CSS file -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Then, we load our custom external CSS main.css file when rendering our webpage (Order matters!) We want our rules to override the ones from Bootstrap, not the other way around-->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- The beginning of the container, it now has nice margins -->
+    <div class="container">
+      <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <h1>
+              <a class="navbar-brand" href="#">SF Airbnb Listings</a>
+            </h1>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a 
+                  class="nav-link" 
+                  aria-current="page" 
+                  href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" 
+                  href="./about.html"
+                  >First 50 Listings</a>
+                </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg" class="d-block w-100" alt="First listing picture">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://a0.muscache.com/pictures/80811/7a57d0e7_original.jpg" class="d-block w-100" alt="Picture of third listing (second does not work)">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://a0.muscache.com/pictures/airflow/Hosting-10537/original/0a4794b6-6370-4380-9f75-60b19322ca23.jpg" width="600" height="465" class="d-block w-100" alt="Picture of fourth listing">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+      </main>
+
+      <footer>
+        <div>Made by John Doe with ❤️</div>
+        <!-- <div>&copy; 2026. All rights reserved.</div> -->
+      </footer>
+    </div>
+    <!-- /container-->
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
