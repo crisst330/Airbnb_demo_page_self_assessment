@@ -107,8 +107,8 @@ This project includes several creative and user experience enhancements beyond t
 
 5. Explore the pages:
 
-   - `index.html` contains the main Airbnb listings page.
-   - `about.html` contains the dynamic Bootstrap carousel and listing viewer.
+   - `index.html` contains the main Airbnb listings page from the class lecture.
+   - `about.html` contains the dynamic Bootstrap carousel and listing viewer (the page I edited for the self-assessment).
    - `airbnb_sf_listings_500.json` stores the Airbnb dataset.
    - `js/main.js` contains the JavaScript logic for dynamically loading and rendering listings.
 
