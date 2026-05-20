@@ -9,3 +9,38 @@ selector {
     margin: 50px; // This shifts the margin to the right by 50px
     font-family: sans-serif;
 } */
+
+html, body {
+    background-color: antiquewhite;
+}
+/* Carousel image sizing */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Listing details card */
+#listing-details .card {
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgb(0, 0, 0, 0.15);
+}
+
+/* Host image*/
+#listing-details img.rounded-circle {
+    margin-bottom: 15px;
+    border: 3px solid #0d6efd;
+}
+
+/* Amenities list spacing */
+#listing-details ul li {
+    margin-bottom: 5px;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
